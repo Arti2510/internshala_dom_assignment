@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="provider" content="Internshala">
+    <meta name="keywords" content="Student Enrollment">
+    <meta name="description" content="Student Enrollment System">
+    <title>Student Enrollment System</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body  onload="myFunction()">
+    <div class="container">
+      <header class="header-section">
+        <h1 class="heading">Student Enrollment System</h1>
+        <p class="paragraph">
+          It is a "Student Enrollment System" which provide the entire process
+          of student registration, from initial application submission to final
+          enrollment, including features like student name, student ID, email ID
+          and Contact Number. Here we can Reset and Delete the Records of
+          students.
+        </p>
+      </header>
+      <main class="main-section">
+        <form class="studentForm" onsubmit="return false">
+          <div class="registration-section">
+            <label for="std_name" class="nameLabel label">Student Name</label>
+            <input
+              type="text"
+              id="std_name"
+              class="nameInput input"
+              name="std_name"
+            />
+            <label for="std_ID" class="IdLabel label">Student ID</label>
+            <input
+              type="text"
+              id="std_ID"
+              class="IdInput input"
+              name="std_ID"
+            />
+            <label for="std_email" class="emailLabel label">Email ID</label>
+            <input
+              type="email"
+              id="std_email"
+              class="emailInput input"
+              name="std_email"
+            />
+            <label for="std_contact" class="contactLabel label"
+              >Contact No</label
+            >
+            <input
+              type="tel"
+              id="std_contact"
+              class="contactInput input"
+              name="std_contact"
+            />
+            <div class="buttons">
+              <input
+                type="submit"
+                id="addButton"
+                class="submitButton"
+                onclick="addData()"
+              />
+              <input
+                type="button"
+                id="updateButton"
+                value="Update"
+                class="updateButton"
+                onclick="UpdateStudent()"
+                style="display: none;"
+              />
+              <input
+                type="button"
+                id="cancelButton"
+                value="Cancel"
+                class="CancelButton"
+                onclick="Cancel()"
+                style="display: none;"
+              />
+            </div>
+          </div>
+          <div class="display-section">
+            <table class="studentTable" id="std_table" border="2">
+              <thead>
+                <tr>
+                  <th>Student Name</th>
+                  <th>Student ID</th>
+                  <th>Email ID</th>
+                  <th>Contact No</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

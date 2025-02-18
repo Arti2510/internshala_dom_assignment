@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/background1_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.header-section{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(13, 0, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.paragraph{
+    padding: 20px 100px 20px 100px;
+    text-shadow: 2px 2px 5px rgb(0, 255, 128);
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(38, 30, 34);
+}
+.studentForm{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.registration-section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-bottom: 1px solid rgb(6, 200, 103);
+    border-right: 1px solid rgb(6, 200, 103);
+    padding: 50px;
+    box-shadow: 5px 5px rgb(134, 190, 209);
+}
+.label{
+    font-weight: bold;
+    font-size: large;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgb(212, 0, 255);
+}
+.input{
+    display: block;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px rgb(99, 186, 215);
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.submitButton{
+    background-color: rgb(25, 136, 220);
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 5px 5px rgb(134, 190, 209);
+}
+.submitButton:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.submitButton:active{
+    background-color: lightblue;
+    border: 2px solid rgb(208, 0, 255);
+}
+.updateButton{
+    background-color: rgb(25, 136, 220);
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(134, 190, 209);
+    font-weight: bold;
+    color: white;
+}
+.updateButton:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: black;
+}
+.updateButton:active{
+    background-color: lightblue;
+    border: 2px solid rgb(208, 0, 255);
+}
+.CancelButton{
+    background-color: rgb(233, 6, 6);
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(134, 190, 209);
+    color: yellow;
+    padding: 10px;
+    font-weight: bold;
+}
+.CancelButton:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: red;
+}
+.CancelButton:active{
+    background-color: lightblue;
+    border: 2px solid rgb(208, 0, 255);
+}
+.display-section{
+    margin: 10px;
+    margin-left: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px rgb(134, 190, 209);
+    overflow-y: auto;
+    height: 400px;
+}
+.studentTable{
+    border: 2px solid black;
+}
+th{
+    width: 120px;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+.editButton{
+    margin: 2px;
+    padding: 5px;
+    background-color: rgb(124, 162, 192);
+    cursor: pointer;
+    font-weight: bold;
+}
+.deleteButton{
+    margin: 2px;
+    padding: 5px;
+    background-color: rgb(124, 162, 192);
+    cursor: pointer;
+    font-weight: bold;
+}
+.editButton:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.editButton:active{
+    background-color: lightblue;
+    border: 2px solid rgb(208, 0, 255);
+}
+.deleteButton:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.deleteButton:active{
+    background-color: lightblue;
+    border: 2px solid rgb(208, 0, 255);
+}
+
+@media screen and (min-width:250px) and (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("images/background1_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .studentForm{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .input{
+        display: block;
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 5px 5px rgb(99, 186, 215);
+    }   
+    .display-section{
+        margin: 10px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px rgb(134, 190, 209);
+        overflow-y: auto;
+        height: 400px;
+        overflow-x: auto;
+    }
+  }
+
+  @media screen and (min-width:481px) and (max-width:769px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("images/background1_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .studentForm{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .input{
+        display: block;
+        width: 350px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 5px 5px rgb(99, 186, 215);
+    }   
+    .display-section{
+        margin: 10px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px rgb(134, 190, 209);
+        overflow-y: auto;
+        height: 400px;
+        overflow-x: auto;
+    }
+  }
